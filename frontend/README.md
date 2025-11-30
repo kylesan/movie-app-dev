@@ -1,0 +1,2 @@
+# frontend
+React app placeholder.
