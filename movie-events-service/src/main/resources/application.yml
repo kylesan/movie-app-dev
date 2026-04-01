@@ -1,0 +1,26 @@
+server:
+  port: 8082
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: movie-events-service
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "com.example.moviewatchlog.events"
+        spring.json.use.type.headers: true
+
+  data:
+    elasticsearch:
+      client:
+        reactive:
+          endpoints: localhost:9200
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

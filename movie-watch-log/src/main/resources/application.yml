@@ -1,0 +1,29 @@
+server:
+  port: 8081
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/moviewatchlog
+  kafka:
+    bootstrap-servers: localhost:9092
+    movie:
+      events:
+        topic: movie-events
+        deleted-topic: movie-deleted-events
+omdb:
+  api:
+    base-url: https://www.omdbapi.com
+    key: YOUR_OMDB_API_KEY
+
+tmdb:
+  api:
+    base-url: https://api.themoviedb.org/3
+    key: YOUR_TMDB_API_KEY
+    country: US
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus

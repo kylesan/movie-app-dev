@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/movie-events-service/movie-app-dev.movie-events-service.main.iml" filepath="$PROJECT_DIR$/.idea/modules/movie-events-service/movie-app-dev.movie-events-service.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/movie-watch-log/movie-app-dev.movie-watch-log.main.iml" filepath="$PROJECT_DIR$/.idea/modules/movie-watch-log/movie-app-dev.movie-watch-log.main.iml" />
+    </modules>
+  </component>
+</project>

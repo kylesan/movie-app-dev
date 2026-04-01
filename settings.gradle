@@ -1,0 +1,6 @@
+rootProject.name = 'movie-app-dev'
+
+include 'movie-watch-log'
+include 'movie-events-service'
+//include 'frontend'
+//include 'mobile'
